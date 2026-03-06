@@ -15,20 +15,18 @@ int main()
 	int SumComputer = 0;
 	int SumPlayer = 0;
 
-	cout << "컴퓨터의 카드" << endl;    
 	for (int i = 0; i < 3; i++)
 	{
 		Computer[i] = rand() % 10 + 1; // c++ rand() 1+ 10 범위 정하는 법
 		SumComputer += Computer[i];
-	}
-	cout << Computer[0] << " " << Computer[1] << " " << Computer[2] << endl;
 
-	cout << "플레이어의 카드" << endl;
-	for (int i = 0; i < 3; i++)
-	{
 		Player[i] = rand() % 10 + 1; // c++ rand() 범위 정하는 법
 		SumPlayer += Player[i];
 	}
+
+	cout << "컴퓨터의 카드" << endl;
+	cout << Computer[0] << " " << Computer[1] << " " << Computer[2] << endl;
+	cout << "플레이어의 카드" << endl;
 	cout << Player[0] << " " << Player[1] << " " << Player[2] << endl;
 
 	cout << "컴퓨터의 카드 총합: " << SumComputer << endl;
