@@ -20,7 +20,7 @@ int main()
 		Computer[i] = rand() % 10 + 1; // c++ rand() 1+ 10 범위 정하는 법
 		SumComputer += Computer[i];
 
-		Player[i] = rand() % 10 + 1; // c++ rand() 범위 정하는 법
+		Player[i] = rand() % 10 + 1;
 		SumPlayer += Player[i];
 	}
 
@@ -50,7 +50,6 @@ int main()
 		{
 			cout << "플레이어의 승리입니다." << endl;
 		}
-
 	}
 
 }
